@@ -1,0 +1,26 @@
+#caa8f5
+#9984d4
+#592e83
+
+
+
+ <div className="popular-products">
+        <div className="popular-item">
+          <img src={creatine} alt="creatine" className=" popular-item-img" />
+          <h2>Creatine Monohydrate</h2>
+          <h3>Highest Quality Creatine on the Market.</h3>
+          <button className="explore-btn">EXPLORE</button>
+        </div>
+        <div className="popular-item">
+          <img src={whey} alt="creatine" className=" popular-item-img" />
+          <h2>Whey Protein</h2>
+          <h3>The most Requested Product in our current collection.</h3>
+          <button className="explore-btn">EXPLORE</button>
+        </div>
+        <div className="popular-item">
+          <img src={preworkout} alt="creatine" className=" popular-item-img" />
+          <h2>Pre-Workout</h2>
+          <h3>The Only Pre-Workout you will ever need.</h3>
+          <button className="explore-btn">EXPLORE</button>
+        </div>
+      </div>
