@@ -91,7 +91,7 @@ body {
   transform: rotate(-405deg);
 }
 a.product-nav {
-  background-color: rgba(160, 160, 160, 0.4);
+  background-color: rgba(160, 160, 160, 0.8);
 }
 
 .popular-item:hover {
@@ -575,6 +575,7 @@ a.product-nav:hover {
   border: none;
   min-width: 30px;
   border-radius: 5px;
+  background-color: transparent;
   color: #fff;
 }
 
