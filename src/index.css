@@ -2,7 +2,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -323,12 +323,18 @@ a.product-nav:hover {
   margin: 1em;
 }
 
+.popular-item h2 {
+  color: rgba(64, 106, 82, 0.9);
+  font-size: 1.2em;
+}
+
 .popular-item p {
   letter-spacing: 1px;
   height: 65px;
   max-width: 280px;
   text-align: center;
   opacity: 0;
+  font-weight: lighter;
 }
 
 .popular-item:hover p {
