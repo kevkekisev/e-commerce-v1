@@ -44,7 +44,9 @@ function CartContainer() {
 
   return (
     <>
-      <h2>Shopping Cart</h2>
+      <div className="cart-title">
+        <h2>Shopping Cart</h2>
+      </div>
       {cartItems.map((item) => {
         return <CartItem key={item.id} {...item} />;
       })}

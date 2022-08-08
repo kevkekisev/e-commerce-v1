@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
-import { useDispatch, useSelector } from "react-redux";
-
-function hideQty() {
-  if (window.innerWidth < 700) {
-  }
-}
+import { useSelector } from "react-redux";
 
 function Navbar() {
   const { cartTotalQuantity } = useSelector((state) => state.cart);
@@ -18,7 +13,7 @@ function Navbar() {
     <section class="top-nav">
       <div>
         <Link to="/" className="nav-title">
-          Project Zeus
+          Project Demeter
         </Link>
       </div>
       <input id="menu-toggle" type="checkbox" />

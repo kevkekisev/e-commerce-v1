@@ -1,7 +1,7 @@
 import React from "react";
-import massgainer from "../images/massgainer.jpg";
-import bcaa from "../images/bcaa.jpeg";
-import mealreplacement from "../images/MealReplacement.jpg";
+import plant04 from "../images/plant04.jpg";
+import plant05 from "../images/plant05.jpg";
+import plant06 from "../images/plant06.jpg";
 import { Link } from "react-router-dom";
 import Database from "./Database";
 
@@ -15,32 +15,41 @@ function Sale() {
         <div className="popular-products">
           <div className="popular-item">
             <img
-              src={massgainer}
+              src={Database[3].image}
               alt="creatine"
               className=" popular-item-img"
             />
-            <h2>Mass Gainer</h2>
-            <h3>When it is time to increase the Calories</h3>
+            <h2>{Database[3].title}</h2>
+            <p>Add it to the list of air purifying plants.</p>
             <Link className="explore-btn" to={`/catalogue/${Database[3].id}`}>
               EXPLORE{" "}
             </Link>
           </div>
           <div className="popular-item">
-            <img src={bcaa} alt="creatine" className=" popular-item-img" />
-            <h2>BCAA - AMINO ACIDS</h2>
-            <h3>Additional repair for the muscles</h3>
+            <img
+              src={Database[4].image}
+              alt="creatine"
+              className=" popular-item-img"
+            />
+            <h2>{Database[4].title}</h2>
+            <p>
+              This is a go-to gift for birthdays, weddings, and anniversaries.
+            </p>
             <Link className="explore-btn" to={`/catalogue/${Database[4].id}`}>
               EXPLORE{" "}
             </Link>
           </div>
           <div className="popular-item">
             <img
-              src={mealreplacement}
+              src={Database[5].image}
               alt="creatine"
               className=" popular-item-img"
             />
-            <h2>Meal Replacement</h2>
-            <h3>Providing the body with essential nutrition</h3>
+            <h2>{Database[5].title}</h2>
+            <p>
+              Monstera is iconic from many 70’s photographs, album covers, or
+              advertisements.
+            </p>
             <Link className="explore-btn" to={`/catalogue/${Database[5].id}`}>
               EXPLORE{" "}
             </Link>

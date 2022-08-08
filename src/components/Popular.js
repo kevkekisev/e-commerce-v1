@@ -1,7 +1,5 @@
 import React from "react";
-import creatine from "../images/creatine.png";
-import whey from "../images/wheyprotein.jpeg";
-import preworkout from "../images/preworkout.jpeg";
+
 import { Link } from "react-router-dom";
 import Database from "./Database";
 
@@ -14,29 +12,45 @@ function Popular() {
         </div>
         <div className="popular-products">
           <div className="popular-item">
-            <img src={creatine} alt="creatine" className=" popular-item-img" />
-            <h2>Creatine Monohydrate</h2>
-            <h3>Highest Quality Creatine on the Market.</h3>
+            <img
+              src={Database[0].image}
+              alt="creatine"
+              className=" popular-item-img"
+            />
+            <h2>{Database[0].title}</h2>
+            <p>
+              It’s deep, green leaves have a rubbery look that is very bold.
+            </p>
             <Link className="explore-btn" to={`/catalogue/${Database[0].id}`}>
               EXPLORE{" "}
             </Link>
           </div>
           <div className="popular-item">
-            <img src={whey} alt="creatine" className=" popular-item-img" />
-            <h2>Whey Protein</h2>
-            <h3>The most Requested Product in our current collection.</h3>
+            <img
+              src={Database[1].image}
+              alt="creatine"
+              className=" popular-item-img"
+            />
+            <h2>{Database[1].title}</h2>
+            <p>
+              This plant has great architectural leaves, curving as it grows for
+              a tropical look.
+            </p>
             <Link className="explore-btn" to={`/catalogue/${Database[1].id}`}>
               EXPLORE{" "}
             </Link>
           </div>
           <div className="popular-item">
             <img
-              src={preworkout}
+              src={Database[2].image}
               alt="creatine"
               className=" popular-item-img"
             />
-            <h2>Pre-Workout</h2>
-            <h3>The Only Pre-Workout you will ever need.</h3>
+            <h2>{Database[2].title}</h2>
+            <p>
+              This plant also made the list of air-filtering plants from the
+              NASA clean air study.
+            </p>
             <Link className="explore-btn" to={`/catalogue/${Database[2].id}`}>
               EXPLORE{" "}
             </Link>
