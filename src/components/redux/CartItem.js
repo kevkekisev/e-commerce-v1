@@ -15,8 +15,8 @@ function CartItem(props) {
         <img src={props.image} width="100px" className="cart-item-img" />
         <h2 className="cart-item-title">{props.title}</h2>
 
-        <h3>{props.weight}</h3>
-        <h3>{props.price}</h3>
+        <h3 className="cart-item-weight">{props.weight}</h3>
+        <h3 className="cart-item-price">{props.price}</h3>
         <button className="cart-btn" onClick={() => dispatch(remove(props.id))}>
           <FontAwesomeIcon icon={faTrashCan} />
         </button>

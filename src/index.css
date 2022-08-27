@@ -284,6 +284,10 @@ a.product-nav:hover {
   width: 360px;
 }
 
+.feature-div h3 {
+  color: #406a52;
+}
+
 .popular-div {
   display: flex;
   flex-direction: row;
@@ -557,7 +561,8 @@ a.product-nav:hover {
 }
 
 .cart-item-title {
-  max-width: 300px;
+  width: 300px;
+  text-align: left;
 }
 .cart-item-img {
   border-radius: 10px;
@@ -580,6 +585,18 @@ a.product-nav:hover {
   color: #fff;
 }
 
+.cart-item-container {
+  font-weight: lighter;
+}
+
+.cart-item-price {
+  width: 47px;
+}
+
+.cart-item-weight {
+  width: 48px;
+  text-align: center;
+}
 .cart-amount {
   width: 20%;
   text-align: center;
